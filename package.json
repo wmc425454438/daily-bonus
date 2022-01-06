@@ -1,0 +1,23 @@
+{
+  "name": "daily-bonus",
+  "version": "1.0.0",
+  "description": "actions for self daily bonus",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmc425454438/daily-bonus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmc425454438/daily-bonus/issues"
+  },
+  "homepage": "https://github.com/wmc425454438/daily-bonus#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.6.3"
+  }
+}
