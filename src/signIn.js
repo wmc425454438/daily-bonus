@@ -9,8 +9,8 @@ const sign_in = async () => {
         credentials: 'include'
     }).then(res => res.json());
 
-    if (today_status.err_no  !== 0) return Promise.reject('签到失败！');
-    if (today_status.data) return '今日已签到！';
+    if (today_status.err_no !== 0) return Promise.reject('签到失败！');
+    if (today_status.data.check_in_done) return '今日已签到！';
 
     const check_in = await fetch('https://api.juejin.cn/growth_api/v1/check_in', {
         headers,
