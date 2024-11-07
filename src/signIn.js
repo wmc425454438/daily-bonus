@@ -14,7 +14,7 @@ const sign_in = async () => {
 
     const check_in = await fetch('https://api.juejin.cn/growth_api/v1/check_in', {
         headers,
-        method: 'POST',
+        method: 'GET',
         credentials: 'include',
     }).then(res => res.json());
 
